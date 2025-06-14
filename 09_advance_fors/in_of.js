@@ -3,9 +3,9 @@ const names = ['abhi','ujjwal','saurabh','arpit','abhinav','satish']
 for (const name of names) {
     const perticalulname = name 
     for (const character of perticalulname) {
-        // console.log(character)
+        console.log(character)
     }
-    // console.log(' ')
+    console.log(' ')
 }
 
 for (const name in names) {
