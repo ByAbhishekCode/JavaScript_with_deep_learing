@@ -8,6 +8,10 @@ for (const name of names) {
     // console.log(' ')
 }
 
+for (const name in names) {
+    console.log(names[name])
+}
+
 
 const personDetails = {
     firstName: 'abhi',
@@ -23,5 +27,5 @@ for (const persond of detail) {
 
 
 for (const key in personDetails) {
-    console.log(key,":", personDetails[key])
+    // console.log(key,":", personDetails[key])
 }
