@@ -14,4 +14,4 @@ let passed = marks.some(mark => mark >= 33);
 console.log(passed); // ✅ true — kyunki kuch students pass hain (45, 80)
 let allPassed = marks.every(mark => mark >= 33);
 
-console.log(allPassed); // ✅ true — sab pass hain
+console.log(allPassed); // false — sab pass hain
