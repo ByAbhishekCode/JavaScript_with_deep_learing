@@ -14,7 +14,7 @@ function countFrequency(str) {
 }
 
 // Example:
-console.log(countFrequency("aaaaaaabbccc")); // { a: 1, b: 2, c: 3 }
+// console.log(countFrequency("aaaaaaabbccc")); // { a: 1, b: 2, c: 3 }
 
 function removeDuplicates(arr) {
   let unique = [];
@@ -27,4 +27,28 @@ function removeDuplicates(arr) {
 
   return unique;
 }
-console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
+// console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
+
+
+// revered string 
+
+let revedstring = 'bobe'
+
+let splitsrting = revedstring.split('').reverse().join('')
+console.log(splitsrting)
+if(revedstring===splitsrting)
+{
+  console.log(revedstring,'is palendrome')
+}
+else
+{
+  console.log('It is not palendorme')
+}
+
+
+let arr = [1,2,3,4,5]
+let arr1 = [1,2,3,4,5]
+console.log(arr == arr1)
+console.log(arr === arr1)
+
+
