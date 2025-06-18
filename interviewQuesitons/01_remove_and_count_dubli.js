@@ -14,7 +14,7 @@ function countFrequency(str) {
 }
 
 // Example:
-// console.log(countFrequency("aaaaaaabbccc")); // { a: 1, b: 2, c: 3 }
+console.log(countFrequency("22666888")); // { a: 1, b: 2, c: 3 }
 
 function removeDuplicates(arr) {
   let unique = [];
@@ -27,12 +27,13 @@ function removeDuplicates(arr) {
 
   return unique;
 }
-// console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
 
 
 // revered string 
 
-let revedstring = 'bobe'
+let a12 = 121
+let revedstring = String(a12);
 
 let splitsrting = revedstring.split('').reverse().join('')
 console.log(splitsrting)
@@ -48,7 +49,23 @@ else
 
 let arr = [1,2,3,4,5]
 let arr1 = [1,2,3,4,5]
-console.log(arr == arr1)
-console.log(arr === arr1)
+// console.log(arr == arr1)
+// console.log(arr === arr1)
+
+// revesed number
+let a = 1234
+
+function revesrd(num){
+  let numstore = []
+  let toChange = String(num)
+  numstore = toChange.split('').reverse().join('')
+  console.log(numstore)
+}
+revesrd(a)
 
 
+  // console.log(a1)
+  // console.log(b1)
+  var a1 = b1 = 10
+
+console.log( '3' + 12 - '5')
