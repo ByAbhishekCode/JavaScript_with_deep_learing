@@ -16,15 +16,15 @@ const arr1 = [5, 6, 7, 8];
 const arr2 = [8, 5, 6, 7];
 
 // Step 1: Check length first
-let isSame = arr1.length === arr2.length;
+let isSame = arr1.length === arr2.length; // give true thats way it will not give like isSame = true
 
 if (isSame) {
     // Step 2: Sort and compare
-    const sorted1 = [...arr1].sort();
+    const sorted1 = [...arr1].sort(); //first sort then it will create shallow copy
     const sorted2 = [...arr2].sort();
 
     for (let i = 0; i < sorted1.length; i++) {
-        if (sorted1[i] !== sorted2[i]) {
+        if (sorted1[i] !== sorted2[i]) { 
             isSame = false;
             break;
         }
