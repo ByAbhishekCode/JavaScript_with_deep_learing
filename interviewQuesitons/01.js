@@ -1,33 +1,12 @@
 const arrayhai = [1, 2, 3, 4];
 const unarray = "1,2,3,4";
-// console.log(arrayhai == unarray); //true
+console.log(arrayhai == unarray); //true
 
 const [y] = arrayhai;
-// console.log(y); // upr vale se connected hai
+console.log(y); // upr vale se connected hai
 
-// arrayhai.length = 0
-//console.log(arrayhai)     //this is blank array for it
-
-// function addStringAlter(str1,str2){
-//     let maxLenght = Math.max(str1.length,str2.length)
-//     let addedString = "";
-//     for(let i = 0 ; i< maxLenght;i++)
-//     {
-//         if(i<str1.length)
-//         {
-//             addedString += str1[i];
-//         }
-//         if(i<str2.length)
-//         {
-//             addedString += str2[i];
-//         }
-//         console.log(addedString);
-//     }
-// }
-
-// let name3 = 'abhiram'
-// let name4 = 'kumarhai'
-// addStringAlter(name3, name4);
+arrayhai.length = 0;
+console.log(arrayhai); //this is give blank array
 
 // let fname = 'ahse ua'
 // let lname = 'bihkkmr'
@@ -57,11 +36,17 @@ let longestWord = sentence.split(" ").reduce((longest, currentWord) => {
   return currentWord.length > longest.length ? currentWord : longest;
 }, "");
 
-console.log("Longest word is:", longestWord);
+console.log("Longest word is:", longestWord); //beacuse
 
-//merge array 
+//merge array
 
-let string = [[1,2],[3,4],[5,6],[7,8],[9,0]];
+let string = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+  [7, 8],
+  [9, 0],
+];
 let merged = [];
 
 for (let i = 0; i < string.length; i++) {

@@ -33,6 +33,8 @@ if (isSame) {
 
 // console.log(isSame); // ✅ true if same elements, false otherwise
 
+
+
 // ye code dono pe kam karega mtlb number or string dono pe
 // Function to count the frequency of each character/digit in a string or number
 function countFrequency(str) {
@@ -60,19 +62,34 @@ function countFrequency(str) {
 // Example:
 console.log(countFrequency(232932889)); // { a: 1, b: 2, c: 3 }
 
-//remove dublicate form array
-function removeDuplicates(arr) {
+//remove dublicate form array and show kon kon se hai dublicate
+function handleDuplicates(arr) {
+  let seen = [];
   let unique = [];
+  let duplicates = [];
 
   for (let item of arr) {
-    if (!unique.includes(item)) {
-      unique.push(item);
+    if (!seen.includes(item)) {
+      seen.push(item);
+      unique.push(item);  // First time — add to unique
+    } else {
+      if (!duplicates.includes(item)) {
+        duplicates.push(item); // Second time — add to duplicates
+      }
     }
   }
 
-  return unique;
+  return {
+    unique: unique,
+    duplicates: duplicates
+  };
 }
-console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
+
+// Test:
+const result = handleDuplicates([1, 2, 2, 3, 4, 4, 5]);
+console.log("✅ Unique Elements:", result.unique);     // [1, 2, 3, 4, 5]
+console.log("🔁 Duplicated Elements:", result.duplicates); // [2, 4]
+
 
 // revered string pallandorme
 
@@ -121,6 +138,7 @@ function addStringAlter(str1, str2) {
 }
 
 addStringAlter(name3, name4);
+
 
 //give grater than 3 value
 let arry1 = [4, 3, 5, 2, 6, 8, 1, 2];
