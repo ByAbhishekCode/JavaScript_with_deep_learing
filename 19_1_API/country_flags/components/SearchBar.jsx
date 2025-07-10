@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function SearchBar({ setQuery }) {
   return (
@@ -10,5 +10,5 @@ export default function SearchBar({ setQuery }) {
         placeholder="Search for a country..."
       />
     </div>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function SelectMenu() {
   return (
@@ -10,5 +10,5 @@ export default function SelectMenu() {
       <option value="Europe">Europe</option>
       <option value="Oceania">Oceania</option>
     </select>
-  )
+  );
 }

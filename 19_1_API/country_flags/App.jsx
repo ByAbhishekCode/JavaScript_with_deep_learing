@@ -1,7 +1,7 @@
-import Header from './components/Header'
-import { Outlet } from 'react-router-dom'
+import Header from "./components/Header";
+import { Outlet } from "react-router-dom";
 
-import './App.css'
+import "./App.css";
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
       <Header />
       <Outlet />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
