@@ -11,7 +11,7 @@
 //   }
 // });
 
-//check arr is same or not  bot working string and number
+//check arr is same or not and  working for both string and number
 const arr1 = [5, 6, 7, 8];
 const arr2 = [8, 5, 6, 7];
 
@@ -31,7 +31,7 @@ if (isSame) {
   }
 }
 
-// console.log(isSame); // ✅ true if same elements, false otherwise
+console.log(isSame); // ✅ true if same elements, false otherwise
 
 
 

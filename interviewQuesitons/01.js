@@ -55,5 +55,18 @@ for (let i = 0; i < string.length; i++) {
     merged.push(innerArray[j]);
   }
 }
+// Another Mehtod For Array 
 
+const mergedNewMethoed = string.reduce((acc,curr)=>{
+  return acc.concat(curr)
+},[])
+
+
+console.log(mergedNewMethoed); // ✅ [1,2,3,4,5,6,7,8,9,0]
 console.log(merged); // ✅ [1,2,3,4,5,6,7,8,9,0]
+
+
+
+const unsortarr = [4,56,23,46,124,78]
+unsortarr.sort((a,b)=> a - b)
+console.log(unsortarr)
